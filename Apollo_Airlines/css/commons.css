@@ -1,0 +1,87 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #1d1d1d;
+    --font-color-pri: #424242;
+    --font-color-sec: #505050;
+    --bg-color_pri: #fff;
+    --bg-color_sec: rgb(233, 233, 233);
+    --heading-color: #292922;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--bg-color_pri);
+    font-family: arial;
+    color: var(--font-color-pri);
+    margin: 0;
+}
+
+div.header_container{
+    border: 2px var(--primary-color) solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: -0.75%;
+    padding: 2.5%;
+    background-color: var(--bg-color_pri);
+}
+
+div.center_container{
+    margin: auto;
+    width: 35%;
+}
+
+a.brand_name:link, a.brand_name:visited{
+    color: var(--font-color-pri);
+    margin: 0;
+    font-size: 125%;
+    letter-spacing: 3em;
+    text-align: center;
+    padding-left: 4%;
+    padding-bottom: 2.5%;
+    transition: 400ms;
+    text-decoration: none;
+    width: 0;
+    display: block;
+}
+
+a.brand_name:hover{
+    box-sizing: border-box;
+    letter-spacing: 2.4em;
+    font-size: 145%;
+    width: 90%;
+    
+    display: block;
+    border-bottom: 3px var(--primary-color) solid;
+    border-right: 3px var(--primary-color) solid;
+}
+
+p.tagline{
+    color: var(--font-color-sec);
+    font-size: 95%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+div.body_container{
+    margin-top: 7%;
+    width: 100%;
+}
+
+div.background_img{
+    position: absolute;
+    z-index: -1;
+    margin-top: -45px;
+    margin-left: -10px;
+    width: 200%;
+    height: auto;
+}
+
+/* FOR TEXT TAGS USE */
+.form{
+    font-weight: bold;
+    text-decoration: underline;
+
+    color: black;
+}
