@@ -10,4 +10,4 @@ APOLLO_AIRLINES
 -client interface (work in progress)
 -admin interface (work in progress)
 -sql (not working)
--db (not working)
+-database (not working)
