@@ -8,18 +8,13 @@
     </head>
     <body>
         <div class="header_container">
-            <!-- <div class="brand_container">
-                <a class="brand_name" href="welcome.html">APOLLO</a>    
-            </div> -->
-
-            <div class="brand_container">
+            <div class="brand_container"></div>
+            <div class="center_container">
                 <a class="brand_name" href="welcome.html">APOLLO</a>
-                <div class="brande">
-                    Airlines
-                </div> 
             </div>
+            
         </div>
-        
+
         <div class="body_container">
             <div class="aesth_container">
                 <!-- <div class="background_img">
@@ -29,27 +24,18 @@
             </div>
             <div class="interface">
 
-                    <!-- <ul class="test">
-                        <li class="current_li"><a class="current_a" href="welcome.html">BOOK A FLIGHT</a></li>
-                        <li class="def"><a class="navigation_middle" href="search.html">SEARCH A FLIGHT</a></li>
+                    <ul>
+                        <li class="def"><a class="navigation" href="welcome.html">BOOK A FLIGHT</a></li>
+                        <li class="current_li"><a class="current_a" href="search.html">SEARCH A FLIGHT</a></li>
                         <li class="def"><a class="navigation" href="status.html">CHECK FLIGHT STATUS</a></li>
-                    </ul> -->
-
-                    <!-- navigation -->
-                    <div class="interface_navigator_container">
-                        <ul class="navigation_list">
-                            <li class="navigation_link_container" ><a class="navigation_link" href="book.html" target="frame" name="left">BOOK A FLIGHT</a></li>
-                            <li class="navigation_link_container"><a class="navigation_link" href="find.html" target="frame" name="mid">SEARCH A FLIGHT</a></li>
-                            <li class="navigation_link_container"><a class="navigation_link" href="check.html" target="frame" name="right">CHECK FLIGHT STATUS</a></li>
-                        </ul>
-                    </div>
+                    </ul>
                     
                     <!-- BOOKING CSS -->
-                    <!-- <div class="booking_container">
+                    <div class="booking_container">
                         <div class="center">
                             <h2 class="form">FILL IN NECESSARY INFORMATION:</h2>
                             <form>
-                                <div class="division_container">
+                                <!-- <div class="division_container">
                                     <div class="half_left">
                                         <div class="division_container" style="margin-bottom: 3%;">
                                             <input type="text" id="passFirstName" name="passFirstName" placeholder="First Name">
@@ -68,53 +54,25 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="division_container">
                                     <label for="datetime_depart">Departure:</label>
                                     <br>
                                     <input type="date" id="datetime_depart" name="departure">
                                 </div>
-                                <div>
-                                    <button type="submit" name="book-btn">Book</button>
+                                <div style="marg">
+                                    <button type="submit" name="book-btn">Search</button>
                                 </div>
                             </form>
                         </div>
-                    </div>  -->
-
-                    <!-- <iframe target="meow.html"  height="200" width="300" frameborder="1" name="frame"></iframe> -->
-                    <!-- <iframe class="responsive" src="book.html" frameborder="0" name="frame"></iframe> -->
-                    <!-- <iframe src="book.html" ></iframe> -->
-
-                    <div class="iframe-container">
-                        <!-- <iframe src="book.html" frameborder="0" name="frame"></iframe> -->
-                        <iframe src="book.html"></iframe>
-                    </div>
-
+                    </div> 
             </div>
 
         </div>
     
        
         <div class="footer">
-
-            <!-- <iframe src=   "http:///www.google.com"  height="200" width="300" frameborder="0" name="frame"></iframe> -->
             <!-- <p class="tagline">A one small ticket, is one giant leap of adventure</p> -->
         </div>
-        <script>
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementsById("wew").style.display = "hidden";
-
-                    // document.getElementsByClassName("logo").style.fontSize = "25px";
-                } else {
-                    document.getElementsById("wew").style.margin = "auto";
-                    // document.getElementsByClassName("navbar").style.padding = "80px 10px";
-                    // document.getElementsByClassName("logo").style.fontSize = "35px";
-                }
-            } 
-        </script>
     </body>
-
 </html>
