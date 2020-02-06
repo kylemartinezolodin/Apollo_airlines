@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+div.division_container {
+	width: 100%;
+	overflow: auto;
+	margin: 2vw 0;
+}
+
+div.half_container{
+    float: left;
+    width: 50%;
+}
+
+.instructions{
+    width: max-content;
+    font-size: 2.55vw;
+    text-decoration: solid;
+    font-weight: bold;
+
+    border-bottom: black 0.4vw solid;
+}
+
+input[type=text]{
+    font-size: 1.25vw;
+    text-transform: uppercase;
+
+    padding: 0.8vw;
+    padding-bottom: 0.4vw;
+    border: 0px;
+    border-bottom: 2px black solid;
+    width: 14.75vw;
+    transition: 500ms;
+}
+
+input[type=text]:hover{
+    width: 50%;
+}
+
+label{
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+select{
+    padding: 0.5vw;
+    border: 0px;
+    border-bottom: 0.25vw black solid;
+}
+
+input[type="date"] {
+	padding: 2vw;
+	padding-bottom: 1vw;
+	text-transform: uppercase;
+	border: 0px;
+	border-bottom: 0.25vw black solid;
+}
+
+button{
+    width: 100%;
+    padding: 2%;
+    border: 3px black solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+button:hover{
+    background: black;
+    color: white;
+    font-size: 125%;
+    padding: 1.6%;
+}

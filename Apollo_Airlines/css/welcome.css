@@ -19,18 +19,21 @@ div.interface{
     padding-bottom: 3%;
     background-color: white;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
+
+    /* height: 900px; */ /* dummy area */
 }
 
 p.tagline{
     margin-top: -0.5%;
-    font-size: 220%;
+    /* font-size: 220%; */
+    font-size: 2.55vw;
     font-style: italic;
     letter-spacing: -2px;
     color: white;
     text-align: left;
 }
 
-ul{
+ul.test{
     list-style-type: none;
     /* margin: auto; */
     margin-left: 25%;
@@ -72,7 +75,7 @@ a.navigation_middle{
     transition: 400ms;
 }
 
-ul:hover{
+ul..test:hover{
     margin-left: 23%;
 }
 
@@ -118,3 +121,78 @@ div.booking_container{
 div.booking_container:hover, div.booking_container:focus-within{
     border: 3px var(--primary-color) solid;
 }
+
+/* ----------------INTERFACE NAVIGATION CSS (shrink to retain desktop look)----------------*/
+
+.interface_navigator_container{
+    /* background-color: rgb(155, 58, 58); */
+    width: 100%;
+    /* height: 6.5vw; */
+    
+    overflow: auto; /* container did not take the follow contents height fix */
+}
+
+ul.navigation_list {
+    /* removes bullets */
+	list-style-type: none;
+    
+    /* centers the navigators */
+    padding: 0;
+    overflow: auto; /* container did not take the follow contents height fix */
+	margin: auto;
+    /* width: 45vw; */
+    
+    width: max-content;
+}
+
+/* selects the middle(second) child(list item) */
+ul.navigation_list :nth-child(2){ /* the nth-child selector has to be in front of a space */
+    border-left: black 0.10vw solid;
+    border-right: black 0.10vw solid;
+}
+
+li.navigation_link_container {
+    /* background-color: orange; */
+    
+    /* text css */
+    font-size: 1.15vw; /* for screenwidth size scaling */
+    /* font-size: 100%; */ /* for static font size */
+    text-align: center;
+    
+    width: 15vw;
+    /* padding: 2.6vw 0; */ /* first value is top-bot secnd is left-right */
+    padding: 2.6vw;
+    float: left;
+    
+    /* animation css */
+    transition: 500ms;
+	/* display: flex; */
+}
+
+li.navigation_link_container :nth-child(){
+    text-decoration: underline;
+}
+
+li.navigation_link_container:hover{
+    /* text-decoration: underline; */
+    
+    /* text css */
+    font-size: 1.25vw;
+    text-align: center;
+}
+
+/* selects the element inside */
+li.navigation_link_container:hover :nth-child(1){
+    border-bottom: black 0.25vw solid;
+}
+
+a.navigation_link:link, .navigation_link:visited{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--font-color-pri);
+}
+
+body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+.first-row {position: absolute;top: 0; left: 0; right: 0; height: 100px; background-color: lime;}
+.second-row {position: absolute; top: 100px; left: 0; right: 0; bottom: 0; background-color: red }
+.second-row iframe {display: block; width: 100%; height: 100%; border: none;}
