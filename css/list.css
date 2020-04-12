@@ -1,0 +1,90 @@
+div.list_container{
+    background-color: red;
+
+    width: 100%;
+}
+
+div.list_item{
+    background-color: blue;
+
+    height: 6vw;
+    overflow: hidden;
+}
+
+div.image_container{
+    float: left;
+    padding: 1vw 0; /* vertical-align */
+    width: 10vw;
+}
+
+div.blank_image{
+    background-color: black;
+
+    margin: auto;
+    width: 4vw;
+    height: 4vw;
+}
+
+div.id_container{
+    
+    font-size: 1.5vw;/* font-size: 1vw; */
+    font-weight: bold;
+    text-align: center;
+
+    float: left;
+    /* height: 4vw; */
+    padding: 2.33vw 0; /* vertical-align */
+    width: 15vw;
+}
+
+div.departure_container, div.arrival_container{
+    font-size: 1.25vw;
+    font-weight: 600;
+    text-align: center;
+
+    float: left;
+    padding: 1.525vw 0; /* vertical-align */
+    /* padding-left: 5vw; */
+    width: 20vw;
+}
+
+div.status_container{
+    background-color: orange;
+
+    font-size: 1.35vw;
+    font-weight: 600;
+    text-align: center;
+
+    float: left;
+    padding: 2.2vw 0; /* vertical-align */
+    /* padding-left: 5vw; */
+    width: 20vw;
+}
+
+div.btn_container{
+    background-color: pink;
+    text-align: center; /*aligns the button to center*/
+
+    float: left;
+    width: 15vw;
+    padding: 1.9vw 0;
+}
+
+input[type="submit"] {
+    padding: 2%;
+    margin: auto;   
+    width: 10vw;
+    border: 3px black solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+input[type="submit"]:hover{
+    background: black;
+    color: white;
+    font-size: 125%;
+    padding: 1.6%;
+}
+
+

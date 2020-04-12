@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/commons.css">
         <link rel="stylesheet" href="css/welcome.css">
         <link rel="stylesheet" href="css/booking.css">
+        <script src="jaba.js"></script>
     </head>
     <body>
         <div class="header_container">
@@ -13,7 +14,7 @@
             </div> -->
 
             <div class="brand_container">
-                <a class="brand_name" href="welcome.html">APOLLO</a>
+                <a class="brand_name" href="index.php">APOLLO</a>
                 <div class="brande">
                     Airlines
                 </div> 
@@ -27,6 +28,7 @@
                 </div> -->
                 <p class="tagline">"ONE SMALL TICKET,<br> IS ONE GIANT LEAP OF ADVENTURE"</p>
             </div>
+            
             <div class="interface">
 
                     <!-- <ul class="test">
@@ -38,8 +40,8 @@
                     <!-- navigation -->
                     <div class="interface_navigator_container">
                         <ul class="navigation_list">
+                            <li class="navigation_link_container"><a class="navigation_link" href="search.php" target="frame" name="mid">SEARCH A FLIGHT</a></li>
                             <li class="navigation_link_container" ><a class="navigation_link" href="book.php" target="frame" name="left">BOOK A FLIGHT</a></li>
-                            <li class="navigation_link_container"><a class="navigation_link" href="find.php" target="frame" name="mid">SEARCH A FLIGHT</a></li>
                             <li class="navigation_link_container"><a class="navigation_link" href="check.php" target="frame" name="right">CHECK FLIGHT STATUS</a></li>
                         </ul>
                     </div>
@@ -87,33 +89,47 @@
 
                     <div class="iframe-container">
                         <!-- <iframe src="book.html" frameborder="0" name="frame"></iframe> -->
-                        <iframe src="book.php"></iframe>
+                        <iframe src="search.php" id="frame0" onload="resizeIFrame(0)"  name="frame"></iframe>
                     </div>
 
             </div>
 
         </div>
-    
-       
+                
         <div class="footer">
 
             <!-- <iframe src=   "http:///www.google.com"  height="200" width="300" frameborder="0" name="frame"></iframe> -->
             <!-- <p class="tagline">A one small ticket, is one giant leap of adventure</p> -->
         </div>
         <script>
-            window.onscroll = function() {scrollFunction()};
+            // window.onscroll = function() {scrollFunction()};
             
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementsById("wew").style.display = "hidden";
+            // function scrollFunction() {
+            //     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            //         document.getElementsById("wew").style.display = "hidden";
 
-                    // document.getElementsByClassName("logo").style.fontSize = "25px";
-                } else {
-                    document.getElementsById("wew").style.margin = "auto";
-                    // document.getElementsByClassName("navbar").style.padding = "80px 10px";
-                    // document.getElementsByClassName("logo").style.fontSize = "35px";
-                }
-            } 
+            //         // document.getElementsByClassName("logo").style.fontSize = "25px";
+            //     } else {
+            //         document.getElementsById("wew").style.margin = "auto";
+            //         // document.getElementsByClassName("navbar").style.padding = "80px 10px";
+            //         // document.getElementsByClassName("logo").style.fontSize = "35px";
+            //     }
+            // }
+            
+            // iframe fit to content js
+            // $('iframe').load(function() {
+            //     setTimeout(iResize, 50);
+            //     // Safari and Opera need a kick-start.
+            //     var iSource = document.getElementById('wew').src;
+            //     document.getElementById('wew').src = '';
+            //     document.getElementById('wew').src = iSource;
+            // });
+            // function iResize() {
+            //     document.getElementById('wew').style.height = 
+            //     document.getElementById('wew').contentWindow.document.body.offsetHeight + 'px';
+            // }
+            
+
         </script>
     </body>
 
