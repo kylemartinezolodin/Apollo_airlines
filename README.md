@@ -10,7 +10,7 @@ APOLLO_AIRLINES <br/>
 -Admin interface (work in progress)<br/>
 -SQL (Working)<br/>
 
-Current Issues:
+Current Issues:<br/>
   -Accepts Infants/Todler Registration even if alone<br/>
   -Does not limit the Passenger registration to avoid overflowing the passenger capacity of a flight/plane<br/>
   -Design in Progress<br/>
