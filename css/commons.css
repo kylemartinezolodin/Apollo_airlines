@@ -140,10 +140,10 @@ div.background_img{
 div.iframe-container {
 	/* overflow: hidden; */
 	/* padding-top: 25%; */
-	position: relative;
+	/* position: relative; */
 	/* height: 100%; */
-	margin: 1vw 3.5vw;
-	/* top: auto; */
+	margin: 0vw 3.5vw;
+    /* top: auto; */
 }
    
 /* div.iframe-container:hover{
@@ -156,7 +156,12 @@ div.iframe-container {
 	left: 0;
 	/* position: absolute; */
 	top: 0;
-	width: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+iframe{
+    
 }
 
 

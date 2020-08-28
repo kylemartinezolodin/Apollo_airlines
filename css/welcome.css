@@ -75,7 +75,7 @@ a.navigation_middle{
     transition: 400ms;
 }
 
-ul..test:hover{
+ul.test:hover{
     margin-left: 23%;
 }
 
@@ -133,16 +133,20 @@ div.booking_container:hover, div.booking_container:focus-within{
 }
 
 ul.navigation_list {
+    /* background-color: rgb(155, 58, 158); */
     /* removes bullets */
 	list-style-type: none;
     
     /* centers the navigators */
     padding: 0;
     overflow: auto; /* container did not take the follow contents height fix */
-	margin: auto;
+    margin: auto;
+    margin-bottom: 1vw;
     /* width: 45vw; */
     
     width: max-content;
+
+    /* transition: 500ms; */
 }
 
 /* selects the middle(second) child(list item) */
@@ -151,21 +155,28 @@ ul.navigation_list :nth-child(2){ /* the nth-child selector has to be in front o
     border-right: black 0.10vw solid;
 }
 
+ul.navigation_list:hover{
+    margin-bottom: 0.62vw;
+}
+
+ul.navigation_list:hover > li{
+    height: 7vw;
+}
 li.navigation_link_container {
     /* background-color: orange; */
     
     /* text css */
-    font-size: 1.15vw; /* for screenwidth size scaling */
+    /* font-size: 1.15vw;  */ /* for screenwidth size scaling */ /* use the link instead of the container */
     /* font-size: 100%; */ /* for static font size */
     text-align: center;
     
-    width: 15vw;
+    /* width: 15vw; */
+    width: max-content;
     /* padding: 2.6vw 0; */ /* first value is top-bot secnd is left-right */
-    padding: 2.6vw;
+    /* padding: 2.6vw; */ /* use the link instead of the container */
     float: left;
+    overflow: auto;
     
-    /* animation css */
-    transition: 500ms;
 	/* display: flex; */
 }
 
@@ -173,23 +184,40 @@ li.navigation_link_container :nth-child(){
     text-decoration: underline;
 }
 
-li.navigation_link_container:hover{
-    /* text-decoration: underline; */
+li.navigation_link_container:hover {
     
-    /* text css */
-    font-size: 1.25vw;
-    text-align: center;
-}
+    /* text-decoration: underline; */
 
+    /* text css */
+	
+    
+	/* padding: 2.475vw 2.6vw; */ /* use the link instead of the container */
+}
 /* selects the element inside */
 li.navigation_link_container:hover :nth-child(1){
     border-bottom: black 0.25vw solid;
 }
 
 a.navigation_link:link, .navigation_link:visited{
+    /* button like link */
+    display: block;
+    padding: 2.6vw;
+    float: left;
+
+    width: inherit;
+
     font-weight: bold;
     text-decoration: none;
     color: var(--font-color-pri);
+
+    
+    /* animation css */
+    transition: 500ms;
+}
+
+a.navigation_link:hover{
+    font-size: 1.25vw; /* use the link instead of the container */
+    text-align: center;
 }
 
 body, html {width: 100%; height: 100%; margin: 0; padding: 0}

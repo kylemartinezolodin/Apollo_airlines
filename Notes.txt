@@ -1,0 +1,6 @@
+Problem: Form submit then display ticket
+
+Solution:
+	- One Submit button for all Passengers
+	- Each Passenger forms get thier own iframe
+	- Each Passenger get their own page for forms0
